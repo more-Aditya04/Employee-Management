@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -38,5 +38,63 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #dd1212;
+} */
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: #e2f1e4;
+  color: #bcc6dd;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+}
+
+/* Logo Effects */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms, transform 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.8em #00eaffaa);
+  transform: scale(1.08);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61ffe1aa);
+}
+
+/* Spin Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 12s linear;
+  }
+}
+
+/* Card */
+.card {
+  padding: 2em;
+  background: rgba(0, 255, 255, 0.07);
+  border-radius: 10px;
+  border: 1px solid #00eaff44;
+  backdrop-filter: blur(6px);
+}
+
+.read-the-docs {
+  color: #00eaff;
 }

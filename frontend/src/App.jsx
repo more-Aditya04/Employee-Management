@@ -72,6 +72,7 @@ import Navbar from './components/Navbar'
 import EmployeesPage from './pages/EmployeesPage'
 import EmployeeEditPage from './pages/EmployeesEditPage'
 import { ToastProvider } from './ui/ToastProvider'
+import './App.css'
 
 export default function App() {
   return (
